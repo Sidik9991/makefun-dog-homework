@@ -52,6 +52,19 @@ const CANDIDATES: Candidate[] = [
     line: "I read the first page and it said nothing about treats, so I turned it into one.",
     scores: [1, 2, 1, 2, 2], // 22 — a dog that reads is not a real dog
   },
+  // Pass 2 challengers (fresh lines, re-judged on the same five criteria)
+  {
+    line: "It was sitting where my bone usually sits. I followed the house rules.",
+    scores: [2, 2, 2, 2, 1], // 29 — "house rules" is a slightly human concept
+  },
+  {
+    line: "I saved it from the rain. The rain was inside my mouth, but I tried.",
+    scores: [2, 2, 2, 1, 2], // 28 — needs a beat to parse
+  },
+  {
+    line: "The homework was the only thing in the house that didn't run away from me.",
+    scores: [2, 1, 2, 2, 2], // 26 — more sad than funny
+  },
 ];
 
 function total(c: Candidate): number {
